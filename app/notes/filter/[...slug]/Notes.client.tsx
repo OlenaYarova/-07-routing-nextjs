@@ -1,5 +1,5 @@
 'use client';
-import css from '@/app/notes/NotesPage.module.css';
+import css from './NotesPage.module.css';
 import SearchBox from '@/components/SearchBox/SearchBox'
 import NoteList from "@/components/NoteList/NoteList"
 import Pagination from '@/components/Pagination/Pagination'

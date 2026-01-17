@@ -1,4 +1,4 @@
-import css from "@/components/Pagination/Pagination.module.css"
+import css from "./Pagination.module.css"
 import ReactPaginate from 'react-paginate';
 
 
