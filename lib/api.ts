@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { Note, NoteFormValues } from "../../06-notehub-nextjs/types/note";
+import type { Note, NoteFormValues } from "../types/note";
 
 
 const API_KEY = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN;
