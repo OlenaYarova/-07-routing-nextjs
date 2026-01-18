@@ -12,7 +12,7 @@ const NotePreviewClient = () => {
 
     const router = useRouter();
     
-      const handleClickBack = () => {
+    const handleClickBack = () => {
     router.back();
   };
 
@@ -29,19 +29,18 @@ const NotePreviewClient = () => {
     if (isLoading) return <p>Loading, please wait...</p>;
     if (error || !note)  return <p>Something went wrong.</p> ;
     
-    const formattedDate = note.updatedAt
-    ? `Updated at: ${note.updatedAt}`
-    : `Created at: ${note.createdAt}`;
+    const formattedDate = `Created at: ${note.createdAt}`;
 
     return (
         <Modal onClose={handleClickBack}>
         <div className={css.container}>
             <div className={css.item}>
                 <div className={css.header}>
-                    <h2>{note.title}</h2>
+                        <h2>{note.title}</h2>
                 </div>
                 <p className={css.content}>{note.content}</p>
                     <p className={css.date}>{formattedDate}</p>
+                    <p className={css.tag}>{note.tag}</p>
                     <button className={css.backBtn} onClick={handleClickBack}>Back</button>
             </div>
             </div>
